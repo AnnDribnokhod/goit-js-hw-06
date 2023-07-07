@@ -7,7 +7,9 @@ function handlerInputLength(evt) {
   const validInputValue = Number(validationInputData.dataset.length);
   if (inputLength === validInputValue) {
     validationInputData.classList.add("valid");
+    validationInputData.classList.remove("invalid");
   } else {
     validationInputData.classList.add("invalid");
+    validationInputData.classList.remove("valid");
   }
 }

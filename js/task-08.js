@@ -7,7 +7,7 @@ function handleSubmit(evt) {
   const { email, password } = evt.currentTarget.elements;
 
   if (!email.value || !password.value.trim()) {
-    alert(
+    return alert(
       "It seems that you did not fill out a required field in the form. Make sure you have provided the required information for all fields."
     );
   }
